@@ -4,7 +4,7 @@ import java.util.stream.Collectors;
 import model.Vehiculo;
 
 public class Main {
- private List<Vehiculo> vehiculos;
+    private List<Vehiculo> vehiculos;
 
     // Constructor
     public Main() {
@@ -16,17 +16,17 @@ public class Main {
         this.vehiculos.add(vehiculo);
     }
 
-    // Método para buscar vehículos por año
-    public List<Vehiculo> buscarPorAño(int año) {
+    // Método para buscar vehículos por año con filtro mayor o menor
+    public List<Vehiculo> buscarPorAño(int año, boolean esMayor) {
         return vehiculos.stream()
-                        .filter(vehiculo -> vehiculo.getAño() == año)
+                        .filter(vehiculo -> esMayor ? vehiculo.getAño() > año : vehiculo.getAño() < año)
                         .collect(Collectors.toList());
     }
 
     // Método para mostrar la lista de vehículos encontrados
     public void mostrarVehiculos(List<Vehiculo> vehiculos) {
         if (vehiculos.isEmpty()) {
-            System.out.println("No se encontraron vehículos para el año especificado.");
+            System.out.println("No se encontraron vehículos para el criterio especificado.");
         } else {
             for (Vehiculo vehiculo : vehiculos) {
                 System.out.println("Marca: " + vehiculo.getMarca() + 
@@ -48,10 +48,15 @@ public class Main {
         main.agregarVehiculo(new Vehiculo("Honda", "Civic", 2019, 25000, "Nuevo", "Gasolina"));
         main.agregarVehiculo(new Vehiculo("Ford", "Focus", 2020, 12000, "Usado", "Diesel"));
 
-        // Buscar vehículos por año
-        List<Vehiculo> vehiculos2020 = main.buscarPorAño(2020);
+        // Buscar vehículos mayores al año 2019
+        List<Vehiculo> vehiculosMayores = main.buscarPorAño(2019, true);
+        System.out.println("Vehículos mayores al año 2019:");
+        main.mostrarVehiculos(vehiculosMayores);
 
-        // Mostrar vehículos encontrados
-        main.mostrarVehiculos(vehiculos2020);
+        // Buscar vehículos menores al año 2020
+        List<Vehiculo> vehiculosMenores = main.buscarPorAño(2020, false);
+        System.out.println("Vehículos menores al año 2020:");
+        main.mostrarVehiculos(vehiculosMenores);
     }
 }
+
