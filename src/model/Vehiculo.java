@@ -7,16 +7,20 @@ public class Vehiculo {
     private int año;
     private int kilometraje;
     private String estadoActual;
-    private String tipoCombustible;
+    private Combustible tipoCombustible;
+    private int potencia;
+    private String color;
 
     // Constructor
-    public Vehiculo(String marca, String modelo, int año, int kilometraje, String estadoActual, String tipoCombustible) {
+    public Vehiculo(String marca, String modelo, int año, int kilometraje, String estadoActual,
+            Combustible tipoCombustible, int potencia) {
         this.marca = marca;
         this.modelo = modelo;
         this.año = año;
         this.kilometraje = kilometraje;
         this.estadoActual = estadoActual;
         this.tipoCombustible = tipoCombustible;
+        this.potencia = potencia;
     }
 
     // Getters
@@ -40,7 +44,7 @@ public class Vehiculo {
         return estadoActual;
     }
 
-    public String getTipoCombustible() {
+    public Combustible getTipoCombustible() {
         return tipoCombustible;
     }
 
@@ -65,7 +69,30 @@ public class Vehiculo {
         this.estadoActual = estadoActual;
     }
 
-    public void setTipoCombustible(String tipoCombustible) {
+    public void setTipoCombustible(Combustible tipoCombustible) {
         this.tipoCombustible = tipoCombustible;
     }
+
+    public int getPotencia() {
+        return potencia;
+    }
+
+    public void setPotencia(int potencia) {
+        this.potencia = potencia;
+    }
+
+    public String toString() {
+        return "Marca: " + marca + "\nModelo: " + modelo + "\nAño: " + año + "\nKilometraje: " + kilometraje + "\nEstado actual: " + estadoActual + "\nTipo de combustible: " + tipoCombustible;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+
+    
 }
