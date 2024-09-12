@@ -7,10 +7,11 @@ public class Vehiculo {
     private int año;
     private int kilometraje;
     private String estadoActual;
-    private String tipoCombustible;
+    private Combustible tipoCombustible;
 
     // Constructor
-    public Vehiculo(String marca, String modelo, int año, int kilometraje, String estadoActual, String tipoCombustible) {
+    public Vehiculo(String marca, String modelo, int año, int kilometraje, String estadoActual,
+            Combustible tipoCombustible) {
         this.marca = marca;
         this.modelo = modelo;
         this.año = año;
@@ -40,7 +41,7 @@ public class Vehiculo {
         return estadoActual;
     }
 
-    public String getTipoCombustible() {
+    public Combustible getTipoCombustible() {
         return tipoCombustible;
     }
 
@@ -65,7 +66,7 @@ public class Vehiculo {
         this.estadoActual = estadoActual;
     }
 
-    public void setTipoCombustible(String tipoCombustible) {
+    public void setTipoCombustible(Combustible tipoCombustible) {
         this.tipoCombustible = tipoCombustible;
     }
 }
