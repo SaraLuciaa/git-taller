@@ -85,7 +85,7 @@ El equipo acordó las siguientes reglas de codificación, documentadas en el arc
 ---
 
 ### **Evidencias Adicionales**
-
+[Ver](https://github.com/SaraLuciaa/git-taller/tree/main/images)
 
 
 ---
