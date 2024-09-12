@@ -8,6 +8,7 @@ public class Vehiculo {
     private int kilometraje;
     private String estadoActual;
     private Combustible tipoCombustible;
+    private int potencia;
 
     // Constructor
     public Vehiculo(String marca, String modelo, int año, int kilometraje, String estadoActual,
@@ -68,5 +69,13 @@ public class Vehiculo {
 
     public void setTipoCombustible(Combustible tipoCombustible) {
         this.tipoCombustible = tipoCombustible;
+    }
+
+    public int getPotencia() {
+        return potencia;
+    }
+
+    public void setPotencia(int potencia) {
+        this.potencia = potencia;
     }
 }
