@@ -44,7 +44,9 @@ public class Main {
                         ", Año: " + vehiculo.getAño() +
                         ", Kilometraje: " + vehiculo.getKilometraje() +
                         ", Estado: " + vehiculo.getEstadoActual() +
-                        ", Combustible: " + vehiculo.getTipoCombustible());
+                        ", Combustible: " + vehiculo.getTipoCombustible() +
+                        ", Color: " + vehiculo.getColor() +
+                        ", Potencia: " + vehiculo.getPotencia());   
             }
         }
     }
@@ -58,16 +60,9 @@ public class Main {
         main.agregarVehiculo(new Vehiculo("Honda", "Civic", 2019, 25000, "Nuevo", Combustible.ELECTRICO, 150));
         main.agregarVehiculo(new Vehiculo("Ford", "Focus", 2020, 12000, "Usado", Combustible.ELECTRICO, 150));
 
-<<<<<<< HEAD
-        // Buscar vehículos mayores al año 2019
-        List<Vehiculo> vehiculosMayores = main.buscarPorAño(2019, true);
-        System.out.println("Vehículos mayores al año 2019:");
-        main.mostrarVehiculos(vehiculosMayores);
-=======
         // Buscar vehículos por año
         List<Vehiculo> vehiculos2020 = main.buscarPorRangoAño(2015, 2016);
 
->>>>>>> dfb34b37a3801c5010d8272966e23aec8315755a
 
         // Buscar vehículos menores al año 2020
         List<Vehiculo> vehiculosMenores = main.buscarPorAño(2020, false);
