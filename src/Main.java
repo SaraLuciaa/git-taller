@@ -37,7 +37,7 @@ public class Main {
                                    ", Combustible: " + vehiculo.getTipoCombustible());
             }
         }
-    }
+    }   
 
     public static void main(String[] args) {
         // Crear instancia de Main
