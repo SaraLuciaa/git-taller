@@ -9,6 +9,7 @@ public class Vehiculo {
     private String estadoActual;
     private Combustible tipoCombustible;
     private int potencia;
+    private String color;
 
     // Constructor
     public Vehiculo(String marca, String modelo, int año, int kilometraje, String estadoActual,
@@ -83,4 +84,15 @@ public class Vehiculo {
     public String toString() {
         return "Marca: " + marca + "\nModelo: " + modelo + "\nAño: " + año + "\nKilometraje: " + kilometraje + "\nEstado actual: " + estadoActual + "\nTipo de combustible: " + tipoCombustible;
     }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+
+    
 }
