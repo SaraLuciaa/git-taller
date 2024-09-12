@@ -31,34 +31,24 @@ El equipo acordó las siguientes reglas de codificación, documentadas en el arc
 
 ## **Commits y Evidencias**
 
-### **Ricardo Urbina**
+### **Raul Quigua**
 - **Tarea:** Creación de la clase `Vehiculo`.
-- **Commits:**
-  - `feat: Implement class Vehiculo with attributes marca, modelo, año, kilometraje, estado_actual, tipo_combustible`
-
-
-### **Sara Diaz**
-- **Tarea:** Creación de la clase `HistorialMantenimiento`.
-- **Commits:**
-  - `feat: Add HistorialMantenimiento class with attributes fecha, descripcion_servicio, kilometraje_en_servicio, costo, nombre_mecanico`
-
-
-### **Raul Alfonso Quigua**
-- **Tarea:** Implementación de la clase `Main` con la capacidad de agregar y buscar vehículos por año.
-- **Commits:**
-  - `feat: Implement Main class with vehicle list and search by year functionality`
 
 
 ### **Kevin Nieto**
-- **Tarea:** Validaciones adicionales en la clase `Vehiculo`.
-- **Commits:**
-  - `fix: Add fuel type validation to Vehiculo class`
-   
+- **Tarea:** Implementación de la clase `Main` con la capacidad de agregar y buscar vehículos por año`.
+
 
 ### **Joseph Velez**
+- **Tarea:** Implementación de la clase `Main` con la capacidad de agregar y buscar vehículos por año.
+
+
+### **Ricardo Urbina**
+- **Tarea:** Validaciones adicionales en la clase `Vehiculo`.
+   
+
+### **Sara Diaz**
 - **Tarea:** Método en la clase `Main` para imprimir todos los vehículos de la flota.
-- **Commits:**
-  - `feat: Add print method to list all vehicles in Main class`
 
 ---
 
@@ -68,22 +58,16 @@ El equipo acordó las siguientes reglas de codificación, documentadas en el arc
 - **Funcionalidad:** Integración de la clase `Vehiculo` (Ricardo) con la clase `Main` (Raul).
 - **Conflicto:** Durante el merge, hubo un conflicto en el archivo `Main.java` debido a diferencias en la inicialización de los atributos de la clase `Vehiculo`.
 - **Resolución:** El equipo acordó utilizar la versión de Raul en la que los vehículos se creaban con valores predeterminados para los atributos. El conflicto se resolvió manualmente utilizando Visual Studio Code.
-- **Commit de resolución:**
-  - `fix: Resolve merge conflict in Main.java for vehicle initialization`
 
 ### **Merge 2:**
-- **Funcionalidad:** Validación de tipo de combustible (Kevin) y búsqueda de vehículos por año (Raul).
+- **Funcionalidad:** Validación de tipo de combustible (Ricardo) y búsqueda de vehículos por año (Joseph).
 - **Conflicto:** Se produjo un conflicto en el archivo `Vehiculo.java` debido a una validación redundante que se había implementado en ambas ramas.
-- **Resolución:** Eliminamos la validación duplicada y mantuvimos la lógica propuesta por Kevin, que era más completa. Esto fue revisado y aprobado por Joseph antes de realizar el merge.
-- **Commit de resolución:**
-  - `fix: Resolve conflict in Vehiculo.java and remove redundant fuel type validation`
+- **Resolución:** Eliminamos la validación duplicada y mantuvimos la lógica propuesta por Joseph, que era más completa. Esto fue hablado y aprobado por Joseph y Ricardo antes de realizar el merge.
 
 ### **Merge 3:**
-- **Funcionalidad:** Impresión de vehículos (Joseph) y adición del historial de mantenimiento (Sara).
+- **Funcionalidad:** Impresión de vehículos (Sara) y busqueda por rango de año de vehiculo (Kevin).
 - **Conflicto:** Hubo un conflicto menor en el método de impresión en la clase `Main`, ya que ambos cambios modificaban la forma en que se mostraba la información de los vehículos.
 - **Resolución:** Modificamos el método para que imprima tanto los atributos del vehículo como su historial de mantenimiento. Los cambios fueron revisados por Sara antes de realizar el merge.
-- **Commit de resolución:**
-  - `fix: Resolve conflict in print method to include vehicle maintenance history`
 
 ---
 
