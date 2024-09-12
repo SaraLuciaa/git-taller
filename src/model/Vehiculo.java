@@ -12,13 +12,14 @@ public class Vehiculo {
 
     // Constructor
     public Vehiculo(String marca, String modelo, int año, int kilometraje, String estadoActual,
-            Combustible tipoCombustible) {
+            Combustible tipoCombustible, int potencia) {
         this.marca = marca;
         this.modelo = modelo;
         this.año = año;
         this.kilometraje = kilometraje;
         this.estadoActual = estadoActual;
         this.tipoCombustible = tipoCombustible;
+        this.potencia = potencia;
     }
 
     // Getters
